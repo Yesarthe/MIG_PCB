@@ -1,0 +1,481 @@
+EESchema Schematic File Version 4
+LIBS:fuzzface mod-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R 1M1
+U 1 1 5D515CFB
+P 2950 3450
+F 0 "1M1" V 2904 3520 50  0000 L CNN
+F 1 "1M" V 2995 3520 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 2950 3380 50  0001 C CNN
+F 3 "~" V 2950 3450 50  0001 C CNN
+	1    2950 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC108 BC108T1
+U 1 1 5D517AD8
+P 3700 3300
+F 0 "BC108T1" H 3891 3346 50  0000 L CNN
+F 1 "BC108" H 3891 3255 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-18-3" H 3900 3225 50  0001 L CIN
+F 3 "http://www.b-kainka.de/Daten/Transistor/BC108.pdf" H 3700 3300 50  0001 L CNN
+	1    3700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE DIODE1
+U 1 1 5D51971C
+P 3700 4650
+F 0 "DIODE1" H 3700 4915 50  0000 C CNN
+F 1 "DIODE" H 3700 4824 50  0000 C CNN
+F 2 "Diode_THT:D_DO-15_P10.16mm_Horizontal" H 3700 4650 50  0001 C CNN
+F 3 "~" H 3700 4650 50  0001 C CNN
+	1    3700 4650
+	1    0    0    -1  
+$EndComp
+Connection ~ 3500 4650
+Wire Wire Line
+	3500 4650 3500 4850
+Wire Wire Line
+	3900 4650 3900 4850
+$Comp
+L Device:R R2
+U 1 1 5D51BBCF
+P 4600 2600
+F 0 "R2" V 4554 2670 50  0000 L CNN
+F 1 "R2" V 4645 2670 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 4600 2530 50  0001 C CNN
+F 3 "~" V 4600 2600 50  0001 C CNN
+	1    4600 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5D51C71F
+P 4600 2300
+F 0 "R3" V 4554 2370 50  0000 L CNN
+F 1 "R3" V 4645 2370 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 4600 2230 50  0001 C CNN
+F 3 "~" V 4600 2300 50  0001 C CNN
+	1    4600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C 0.01uF1
+U 1 1 5D51DAD2
+P 4900 2450
+F 0 "0.01uF1" V 4648 2450 50  0000 C CNN
+F 1 "0.01uF" V 4739 2450 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm" H 4938 2300 50  0001 C CNN
+F 3 "~" H 4900 2450 50  0001 C CNN
+	1    4900 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 2450 4600 2450
+Wire Wire Line
+	5050 2450 5400 2450
+$Comp
+L Device:CP 2.2uF1
+U 1 1 5D51F7C8
+P 3350 3300
+F 0 "2.2uF1" V 3095 3300 50  0000 C CNN
+F 1 "2.2uF" V 3186 3300 50  0000 C CNN
+F 2 "Capacitor_THT:C_Radial_D6.3mm_H5.0mm_P2.50mm" H 3388 3150 50  0001 C CNN
+F 3 "~" H 3350 3300 50  0001 C CNN
+	1    3350 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5D520188
+P 2950 3600
+F 0 "#PWR0101" H 2950 3350 50  0001 C CNN
+F 1 "GND" H 2955 3427 50  0000 C CNN
+F 2 "" H 2950 3600 50  0001 C CNN
+F 3 "" H 2950 3600 50  0001 C CNN
+	1    2950 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5D5203CF
+P 3800 3500
+F 0 "#PWR0102" H 3800 3250 50  0001 C CNN
+F 1 "GND" H 3805 3327 50  0000 C CNN
+F 2 "" H 3800 3500 50  0001 C CNN
+F 3 "" H 3800 3500 50  0001 C CNN
+	1    3800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5D523BCD
+P 3100 2150
+F 0 "#FLG0101" H 3100 2225 50  0001 C CNN
+F 1 "PWR_FLAG" H 3100 2323 50  0000 C CNN
+F 2 "" H 3100 2150 50  0001 C CNN
+F 3 "~" H 3100 2150 50  0001 C CNN
+	1    3100 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 9V1
+U 1 1 5D5280E7
+P 2550 2150
+F 0 "9V1" H 2468 1925 50  0000 C CNN
+F 1 "9V" H 2468 2016 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.54mm_Drill1.5mm_Beaded" H 2550 2150 50  0001 C CNN
+F 3 "~" H 2550 2150 50  0001 C CNN
+	1    2550 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 in1
+U 1 1 5D529A75
+P 2550 3300
+F 0 "in1" H 2468 3075 50  0000 C CNN
+F 1 "in" H 2468 3166 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.54mm_Drill1.5mm_Beaded" H 2550 3300 50  0001 C CNN
+F 3 "~" H 2550 3300 50  0001 C CNN
+	1    2550 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2750 2150 3100 2150
+$Comp
+L Connector_Generic:Conn_01x01 sw1
+U 1 1 5D52B347
+P 3700 4000
+F 0 "sw1" H 3780 4042 50  0000 L CNN
+F 1 "sw1" H 3780 3951 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D2.54mm_Drill1.5mm_Beaded" H 3700 4000 50  0001 C CNN
+F 3 "~" H 3700 4000 50  0001 C CNN
+	1    3700 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 sw2
+U 1 1 5D52C106
+P 3900 4250
+F 0 "sw2" V 3864 4162 50  0000 R CNN
+F 1 "sw2" V 3773 4162 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Loop_D2.54mm_Drill1.5mm_Beaded" H 3900 4250 50  0001 C CNN
+F 3 "~" H 3900 4250 50  0001 C CNN
+	1    3900 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R 100k1
+U 1 1 5D52CAF7
+P 4400 3850
+F 0 "100k1" H 4400 4057 50  0000 C CNN
+F 1 "100k" H 4400 3966 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 4400 3780 50  0001 C CNN
+F 3 "~" V 4400 3850 50  0001 C CNN
+	1    4400 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 sw3
+U 1 1 5D52D11E
+P 4000 4000
+F 0 "sw3" H 3918 3775 50  0000 C CNN
+F 1 "sw3" H 3918 3866 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.54mm_Drill1.5mm_Beaded" H 4000 4000 50  0001 C CNN
+F 3 "~" H 4000 4000 50  0001 C CNN
+	1    4000 4000
+	-1   0    0    1   
+$EndComp
+Connection ~ 3500 4000
+Wire Wire Line
+	3500 4000 3500 4650
+Wire Wire Line
+	3500 3300 3500 3850
+Connection ~ 3500 3300
+Wire Wire Line
+	3900 4450 3900 4650
+Connection ~ 3900 4650
+$Comp
+L Connector_Generic:Conn_01x01 A1k1
+U 1 1 5D530313
+P 4600 4250
+F 0 "A1k1" V 4472 4330 50  0000 L CNN
+F 1 "A1k1" V 4563 4330 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D2.54mm_Drill1.5mm_Beaded" H 4600 4250 50  0001 C CNN
+F 3 "~" H 4600 4250 50  0001 C CNN
+	1    4600 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 A1k3
+U 1 1 5D530F39
+P 4600 4600
+F 0 "A1k3" V 4564 4512 50  0000 R CNN
+F 1 "A1k3" V 4473 4512 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Loop_D2.54mm_Drill1.5mm_Beaded" H 4600 4600 50  0001 C CNN
+F 3 "~" H 4600 4600 50  0001 C CNN
+	1    4600 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 A1k2
+U 1 1 5D5325B8
+P 4850 4450
+F 0 "A1k2" H 4768 4225 50  0000 C CNN
+F 1 "A1k2" H 4768 4316 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.54mm_Drill1.5mm_Beaded" H 4850 4450 50  0001 C CNN
+F 3 "~" H 4850 4450 50  0001 C CNN
+	1    4850 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5050 4450 5150 4450
+$Comp
+L Connector_Generic:Conn_01x01 A500k1
+U 1 1 5D539F1E
+P 5600 2450
+F 0 "A500k1" H 5680 2492 50  0000 L CNN
+F 1 "A500k1" H 5680 2401 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D2.54mm_Drill1.5mm_Beaded" H 5600 2450 50  0001 C CNN
+F 3 "~" H 5600 2450 50  0001 C CNN
+	1    5600 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 A500k2
+U 1 1 5D53BF86
+P 5750 2850
+F 0 "A500k2" V 5714 2762 50  0000 R CNN
+F 1 "A500k2" V 5623 2762 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Loop_D2.54mm_Drill1.5mm_Beaded" H 5750 2850 50  0001 C CNN
+F 3 "~" H 5750 2850 50  0001 C CNN
+	1    5750 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 A500k3
+U 1 1 5D53D93A
+P 5600 3150
+F 0 "A500k3" V 5564 3062 50  0000 R CNN
+F 1 "A500k3" V 5473 3062 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Loop_D2.54mm_Drill1.5mm_Beaded" H 5600 3150 50  0001 C CNN
+F 3 "~" H 5600 3150 50  0001 C CNN
+	1    5600 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5D53E0E2
+P 5600 3350
+F 0 "#PWR0105" H 5600 3100 50  0001 C CNN
+F 1 "GND" H 5605 3177 50  0000 C CNN
+F 2 "" H 5600 3350 50  0001 C CNN
+F 3 "" H 5600 3350 50  0001 C CNN
+	1    5600 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3050 6400 3050
+$Comp
+L Connector_Generic:Conn_01x01 J12
+U 1 1 5D5401CD
+P 6600 3050
+F 0 "J12" H 6680 3092 50  0000 L CNN
+F 1 "out" H 6680 3001 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D2.54mm_Drill1.5mm_Beaded" H 6600 3050 50  0001 C CNN
+F 3 "~" H 6600 3050 50  0001 C CNN
+	1    6600 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5D540F2A
+P 4600 4800
+F 0 "#FLG0102" H 4600 4875 50  0001 C CNN
+F 1 "PWR_FLAG" V 4600 4927 50  0000 L CNN
+F 2 "" H 4600 4800 50  0001 C CNN
+F 3 "~" H 4600 4800 50  0001 C CNN
+	1    4600 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3800 2750 3800 2950
+Wire Wire Line
+	4300 2950 3800 2950
+Connection ~ 3800 2950
+Wire Wire Line
+	3800 2950 3800 3100
+$Comp
+L Diode:1N4007 1N4007
+U 1 1 5D54B94D
+P 3500 2150
+F 0 "1N4007" H 3500 1934 50  0000 C CNN
+F 1 "1N4007" H 3500 2025 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3500 1975 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3500 2150 50  0001 C CNN
+	1    3500 2150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 2150 3350 2150
+Connection ~ 3100 2150
+$Comp
+L Transistor_BJT:BC108 BC108T2
+U 1 1 5D555531
+P 4500 2950
+F 0 "BC108T2" H 4691 2996 50  0000 L CNN
+F 1 "BC108" H 4691 2905 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-18-3" H 4700 2875 50  0001 L CIN
+F 3 "http://www.b-kainka.de/Daten/Transistor/BC108.pdf" H 4500 2950 50  0001 L CNN
+	1    4500 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3300 2950 3300
+Wire Wire Line
+	4600 3150 4600 3850
+Connection ~ 4600 2450
+Wire Wire Line
+	4150 4000 4200 4000
+Wire Wire Line
+	4300 4200 4350 4200
+Connection ~ 4600 4000
+Wire Wire Line
+	4600 4000 4600 4050
+Connection ~ 3800 2150
+Wire Wire Line
+	3800 2150 4600 2150
+Wire Wire Line
+	3650 2150 3800 2150
+Wire Wire Line
+	3800 2150 3800 2450
+$Comp
+L Device:R R1
+U 1 1 5D51A805
+P 3800 2600
+F 0 "R1" V 3754 2670 50  0000 L CNN
+F 1 "R1" V 3845 2670 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 3800 2530 50  0001 C CNN
+F 3 "~" V 3800 2600 50  0001 C CNN
+	1    3800 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 3300
+Wire Wire Line
+	2950 3300 3200 3300
+$Comp
+L Connector_Generic:Conn_01x01 GND1
+U 1 1 5D5803A7
+P 4600 5140
+F 0 "GND1" H 4518 4915 50  0000 C CNN
+F 1 "GND" H 4518 5006 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.54mm_Drill1.5mm_Beaded" H 4600 5140 50  0001 C CNN
+F 3 "~" H 4600 5140 50  0001 C CNN
+	1    4600 5140
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 4940 4600 4800
+Connection ~ 4600 4800
+$Comp
+L pspice:DIODE DIODE2
+U 1 1 5D519F22
+P 3700 4850
+F 0 "DIODE2" H 3700 4585 50  0000 C CNN
+F 1 "DIODE" H 3700 4676 50  0000 C CNN
+F 2 "Diode_THT:D_DO-15_P10.16mm_Horizontal" H 3700 4850 50  0001 C CNN
+F 3 "~" H 3700 4850 50  0001 C CNN
+	1    3700 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4200 4000 4600 4000
+Connection ~ 4200 4000
+Wire Wire Line
+	4250 3850 3500 3850
+Connection ~ 3500 3850
+Wire Wire Line
+	3500 3850 3500 4000
+Wire Wire Line
+	4550 3850 4600 3850
+Connection ~ 4600 3850
+Wire Wire Line
+	4600 3850 4600 4000
+Wire Wire Line
+	5250 4750 5250 4800
+$Comp
+L power:GND #PWR0104
+U 1 1 5D5394D6
+P 5250 4800
+F 0 "#PWR0104" H 5250 4550 50  0001 C CNN
+F 1 "GND" H 5255 4627 50  0000 C CNN
+F 2 "" H 5250 4800 50  0001 C CNN
+F 3 "" H 5250 4800 50  0001 C CNN
+	1    5250 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C 22uF1
+U 1 1 5D5351C5
+P 5250 4600
+F 0 "22uF1" H 5365 4646 50  0000 L CNN
+F 1 "22uF" H 5365 4555 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm" H 5288 4450 50  0001 C CNN
+F 3 "~" H 5250 4600 50  0001 C CNN
+	1    5250 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5DDFBBB6
+P 5150 4450
+F 0 "#FLG0103" H 5150 4525 50  0001 C CNN
+F 1 "PWR_FLAG" H 5150 4623 50  0000 C CNN
+F 2 "" H 5150 4450 50  0001 C CNN
+F 3 "~" H 5150 4450 50  0001 C CNN
+	1    5150 4450
+	1    0    0    -1  
+$EndComp
+Connection ~ 5150 4450
+Wire Wire Line
+	5150 4450 5250 4450
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5DDFC185
+P 5750 3050
+F 0 "#FLG0104" H 5750 3125 50  0001 C CNN
+F 1 "PWR_FLAG" V 5750 3177 50  0000 L CNN
+F 2 "" H 5750 3050 50  0001 C CNN
+F 3 "~" H 5750 3050 50  0001 C CNN
+	1    5750 3050
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5750 3050
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 5DDFCBC4
+P 5600 3350
+F 0 "#FLG0105" H 5600 3425 50  0001 C CNN
+F 1 "PWR_FLAG" V 5600 3477 50  0000 L CNN
+F 2 "" H 5600 3350 50  0001 C CNN
+F 3 "~" H 5600 3350 50  0001 C CNN
+	1    5600 3350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5600 3350
+$EndSCHEMATC
